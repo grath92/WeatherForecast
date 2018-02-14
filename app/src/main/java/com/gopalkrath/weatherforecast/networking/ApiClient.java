@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
 
-    public final static String BASE_URL = "https://query.yahooapis.com/v1/public/yql?q=";
+    public final static String BASE_URL = "https://query.yahooapis.com/v1/public/";
     private static Retrofit retrofit = null;
 
 
