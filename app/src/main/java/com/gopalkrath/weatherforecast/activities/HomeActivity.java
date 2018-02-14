@@ -1,7 +1,9 @@
-package com.gopalkrath.weatherforecast;
+package com.gopalkrath.weatherforecast.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.gopalkrath.weatherforecast.R;
 
 public class HomeActivity extends AppCompatActivity {
 
