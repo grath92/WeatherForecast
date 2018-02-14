@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="fontLarge">51sp</dimen>
+    <dimen name="fontSmall">15sp</dimen>
+
+    <dimen name="paddingNormal">15dp</dimen>
+    <dimen name="paddingLarge">30dp</dimen>
+
+    <dimen name="imgCloudHeight">70dp</dimen>
+    <dimen name="imgCloudWidth">100dp</dimen>
+
+    <dimen name="marginLarge">30dp</dimen>
+
+</resources>

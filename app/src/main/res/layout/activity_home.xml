@@ -1,18 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    android:id="@+id/layoutMain"
     tools:context="com.gopalkrath.weatherforecast.activities.HomeActivity">
 
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:alpha="0.8"/>
+    <LinearLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/paddingNormal"
+        android:weightSum="3">
+        <TextView
+            android:id="@+id/txtCityName"
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content"
+            tools:text="Bangalore"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fontSmall"/>
+        <TextView
+            android:id="@+id/txtSunrise"
+            android:layout_width="0dp"
+            android:layout_weight="1.1"
+            android:layout_height="wrap_content"
+            tools:text="SunRise: 6:45 am"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fontSmall"/>
+        <TextView
+            android:id="@+id/txtSunset"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            tools:text="SunSet: 6:45 pm"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fontSmall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMiddle"
+        android:layout_below="@+id/layoutTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:paddingStart="@dimen/paddingNormal">
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/txtTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="29 C"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fontLarge"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txtWeatherCondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Cloudy"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fontSmall"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imgCloud"
+        android:layout_toEndOf="@+id/layoutMiddle"
+        android:layout_below="@+id/layoutTop"
+        android:contentDescription="@string/app_name"
+        android:layout_width="@dimen/imgCloudWidth"
+        android:layout_height="@dimen/imgCloudHeight"
+        android:layout_marginStart="@dimen/marginLarge"/>
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
