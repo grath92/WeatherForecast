@@ -9,7 +9,11 @@
 
     <dimen name="imgCloudHeight">70dp</dimen>
     <dimen name="imgCloudWidth">100dp</dimen>
+    <dimen name="imgSliderSize">140dp</dimen>
 
     <dimen name="marginLarge">30dp</dimen>
+    <dimen name="marginNormal">20dp</dimen>
+
+    <dimen name="itemViewSize">240dp</dimen>
 
 </resources>

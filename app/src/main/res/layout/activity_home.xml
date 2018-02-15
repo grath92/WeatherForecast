@@ -81,13 +81,40 @@
         android:layout_height="@dimen/imgCloudHeight"
         android:layout_marginStart="@dimen/marginLarge"/>
 
+    <TextView
+        android:id="@+id/txtSlide"
+        android:layout_below="@+id/layoutMiddle"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Slide to see"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/fontSmall"
+        android:padding="@dimen/paddingNormal"
+        android:layout_marginTop="@dimen/marginNormal"/>
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcvSlide"
+        android:layout_below="@+id/txtSlide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/txtRetry"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_retry"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/fontSmall"
+        android:padding="@dimen/paddingNormal"
+        android:drawableBottom="@drawable/ic_retry"
         android:visibility="gone"/>
 
 </RelativeLayout>
